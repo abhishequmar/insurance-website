@@ -1,0 +1,8 @@
+/* Set a global background color and font styling */
+body {
+  @apply bg-gray-100 font-sans;
+}
+
+main {
+  @apply p-6;
+}

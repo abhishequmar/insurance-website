@@ -4,7 +4,7 @@
 }
 
 .hero {
-    min-height: calc(100vh - 64px); 
+    height: 100%;
 }
 
 
@@ -222,5 +222,13 @@
   font-weight: bold;
 }
 
+
+
+/* ///////////////////////////////////////////////////////// */
+
+.arc-top {
+    border-top-left-radius: 100% 50px;
+    border-top-right-radius: 100% 50px;
+  }
 
 

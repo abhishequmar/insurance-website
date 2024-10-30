@@ -1,6 +1,6 @@
 <!-- landing-page.component.html -->
 <section
-  class="hero h-screen bg-cover bg-center flex items-center justify-center px-8 "
+  class="hero h-screen bg-cover bg-center flex items-center justify-center px-8 bg-[#f4fefd]"
   
 >
   <div
@@ -22,14 +22,25 @@
       </p>
       <div class="flex gap-4">
   <!-- Get Started Button -->
+  <div class="relative flex items-center justify-center space-x-4">
+  <!-- Get Started Button -->
   <button class="flex items-center px-6 py-3 bg-teal-600 text-white rounded-lg shadow-md hover:bg-teal-700 focus:outline-none">
     <span class="mr-2">›</span> Get Started
   </button>
-  
+
   <!-- Contact Us Button -->
   <button class="flex items-center px-6 py-3 border-2 border-teal-600 text-teal-600 rounded-lg hover:bg-teal-100 focus:outline-none">
     <span class="mr-2">✈️</span> Contact Us
   </button>
+
+  <!-- Image positioned to the right of the buttons -->
+  <img
+    class="h-10 w-auto ml-10 "
+    src="assets/images/leaf.png"
+    alt="Leaf Icon"
+  />
+</div>
+
 </div>
 
     </div>
@@ -38,9 +49,9 @@
     <div class="lg:w-1/2 flex justify-center">
       <img
       style="width: 75%; height: auto"
-        src="assets/images/father_daughter_image.png"
+        src="assets/images/father_daughter.png"
         alt="Father and daughter with toy"
-        class="rounded-lg max-w-full h-auto shadow-lg"
+        class="rounded-lg max-w-full h-auto "
       />
     </div>
   </div>
@@ -48,44 +59,47 @@
   
 </section>
 
-<section>
+<section class="bg-white relative pt-16">
+  <!-- Concave Arc at the Top -->
+  <div class="absolute -top-12 left-0 w-full h-24 bg-[#f4fefd] arc-top"></div>
+
   <!-- landing-page.component.html -->
-<div class="feature-section">
-  <h2 class="feature-title">Our Features</h2>
-  <h3 class="feature-subtitle">Better Digital Insurance Begins Right Here</h3>
-  
-  <div class="feature-cards">
-    <!-- Card 1: Money Back Guarantee -->
-    <div class="feature-card">
-      <img src="assets/images/moneyback_logo.png" alt="Money Back Icon" class="icon" />
-      <h3>Money Back Guarantee</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis placerat arcu nibh sed.</p>
-    </div>
+  <div class="feature-section pt-[10%]">
+    <h2 class="feature-title">Our Features</h2>
+    <h3 class="feature-subtitle">Better Digital Insurance Begins Right Here</h3>
 
-    <!-- Card 2: All Claims At Anytime -->
-    <div class="feature-card">
-      <img src="assets/images/allclaims_logo.png" alt="Claims Icon" class="icon" />
-      <h3>All Claims At Anytime</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis placerat arcu nibh sed.</p>
-    </div>
+    <div class="feature-cards">
+      <!-- Card 1: Money Back Guarantee -->
+      <div class="feature-card">
+        <img src="assets/images/moneyback_logo.png" alt="Money Back Icon" class="icon" />
+        <h3>Money Back Guarantee</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis placerat arcu nibh sed.</p>
+      </div>
 
-    <!-- Card 3: Digital Insurance Policy -->
-    <div class="feature-card">
-      <img src="assets/images/digitalinsurance_logo.png" alt="Insurance Icon" class="icon" />
-      <h3>Digital Insurance Policy</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis placerat arcu nibh sed.</p>
-    </div>
+      <!-- Card 2: All Claims At Anytime -->
+      <div class="feature-card">
+        <img src="assets/images/allclaims_logo.png" alt="Claims Icon" class="icon" />
+        <h3>All Claims At Anytime</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis placerat arcu nibh sed.</p>
+      </div>
 
-    <!-- Card 4: Direct Payment App -->
-    <div class="feature-card">
-      <img src="assets/images/directpayment_logo.png" alt="Payment Icon" class="icon" />
-      <h3>Direct Payment App</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis placerat arcu nibh sed.</p>
+      <!-- Card 3: Digital Insurance Policy -->
+      <div class="feature-card">
+        <img src="assets/images/digitalinsurance_logo.png" alt="Insurance Icon" class="icon" />
+        <h3>Digital Insurance Policy</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis placerat arcu nibh sed.</p>
+      </div>
+
+      <!-- Card 4: Direct Payment App -->
+      <div class="feature-card">
+        <img src="assets/images/directpayment_logo.png" alt="Payment Icon" class="icon" />
+        <h3>Direct Payment App</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis placerat arcu nibh sed.</p>
+      </div>
     </div>
   </div>
-</div>
-
 </section>
+
 
 <section class="py-12 px-4 bg-gray-50">
   <!-- landing-page.component.html -->
@@ -94,13 +108,13 @@
     <div class="unique-about-content flex w-full max-w-4xl gap-8 flex-col lg:flex-row">
       <!-- Left Column: Feature Cards -->
       <div class="unique-about-features w-full lg:w-3/4">
-        <h2 class="unique-about-title text-teal-600 text-sm uppercase mb-2">About Incep</h2>
+        <h2 class="unique-about-title text-teal-600 text-sm uppercase mb-2">About INCEP</h2>
         <h3 class="unique-about-subtitle text-3xl font-bold mb-8">Life Insurance That Creates Wealth For Everyone</h3>
 
         <!-- Feature Card 1 -->
         <div class="unique-feature-card flex items-center bg-white p-6 mb-4 rounded-lg shadow-md">
-          <div class="unique-feature-icon flex-shrink-0 mr-4">
-            <img src="assets/icons/trusted-icon.svg" alt="Trusted Icon" class="w-10 h-10" />
+          <div class="unique-feature-icon flex-shrink-0 mr-4 h-[75%] w-auto">
+            <img src="assets/images/trusted_logo.png" alt="Trusted Icon" class="w-10 h-10" />
           </div>
           <div class="unique-feature-text">
             <h4 class="text-lg font-semibold mb-1">Trusted By Thousand</h4>
@@ -111,7 +125,7 @@
         <!-- Feature Card 2 -->
         <div class="unique-feature-card flex items-center bg-white p-6 mb-4 rounded-lg shadow-md">
           <div class="unique-feature-icon flex-shrink-0 mr-4">
-            <img src="assets/icons/set-for-life-icon.svg" alt="Set for Life Icon" class="w-10 h-10" />
+            <img src="assets/images/setforlife_logo.png" alt="Set for Life Icon" class="w-10 h-10" />
           </div>
           <div class="unique-feature-text">
             <h4 class="text-lg font-semibold mb-1">Set For Life</h4>
@@ -122,7 +136,7 @@
         <!-- Feature Card 3 -->
         <div class="unique-feature-card flex items-center bg-white p-6 mb-4 rounded-lg shadow-md">
           <div class="unique-feature-icon flex-shrink-0 mr-4 ">
-            <img src="assets/icons/protective-insurance-icon.svg" alt="Protective Insurance Icon" class="w-10 h-10" />
+            <img src="assets/images/protection_logo.png" alt="Protective Insurance Icon" class="w-10 h-10" />
           </div>
           <div class="unique-feature-text">
             <h4 class="text-lg font-semibold mb-1">Protective Insurance</h4>
@@ -239,7 +253,7 @@
 
 <section class="px-4 py-8 lg:px-16 bg-gray-50">
   <!-- Section Header -->
-  <div class="text-center mb-8">
+  <div class="text-center mb-8 pt-[5%]">
     <h4 class="text-teal-600 font-semibold uppercase tracking-wide text-sm mb-2">Expert Team</h4>
     <h2 class="text-2xl lg:text-4xl font-bold text-gray-800 mb-4">
       Meet Our Team Expert & Experience Members
@@ -534,16 +548,24 @@
       
 
       <!-- Our Review Section -->
-      <div class="pl-[10%] pt-[15%]">
-        <h4 class="text-teal-300 font-semibold uppercase tracking-wide mb-2">Our Review</h4>
-        <h2 class="text-2xl lg:text-3xl font-bold text-white mb-6">What they say about us honest reviews</h2>
-        <p class="text-gray-200 mb-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis placerat arcu nibh sed placerat elementum. Urna eu et purus et mi sit rhoncus.
-        </p>
-        <a href="#" class="inline-block bg-teal-500 text-white font-medium py-2 px-6 rounded-lg hover:bg-teal-600">
-          ➤ View More
-        </a>
-      </div>
+      <div class="relative pl-[10%] pt-[15%]">
+  <!-- Leaf image positioned absolutely at the top -->
+  <img
+    class="absolute -top-14 left-0 h-[15%] w-auto pl-[40%] pt-[5%]"
+    src="assets/images/leaf.png"
+    alt="Leaf Icon"
+  />
+
+  <h4 class="text-teal-300 font-semibold uppercase tracking-wide mb-2">Our Review</h4>
+  <h2 class="text-2xl lg:text-3xl font-bold text-white mb-6">What they say about us honest reviews</h2>
+  <p class="text-gray-200 mb-6">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis placerat arcu nibh sed placerat elementum. Urna eu et purus et mi sit rhoncus.
+  </p>
+  <a href="#" class="inline-block bg-teal-500 text-white font-medium py-2 px-6 rounded-lg hover:bg-teal-600">
+    ➤ View More
+  </a>
+</div>
+
     </div>
 
   </div>
@@ -572,8 +594,9 @@
           <h3 class="text-xl font-semibold text-gray-800">What Is Personal Liability Umbrella Coverage</h3>
           <div class="mt-4 flex items-center justify-between">
             <span class="text-gray-500 text-sm">14 AUG 2021</span>
-            <a href="#" class="text-teal-500 font-semibold border-b-2 border-teal-500 hover:border-teal-600">Read More</a>
-          </div>
+<button class="px-6 py-2 border-2 border-teal-500 text-teal-500 font-semibold rounded-md hover:bg-teal-50 focus:outline-none">
+  Read More
+</button>          </div>
         </div>
       </div>
 
@@ -589,8 +612,9 @@
           <h3 class="text-xl font-semibold text-gray-800">Insurance Covers Risk Of Fire Absence Of Fire Insurance</h3>
           <div class="mt-4 flex items-center justify-between">
             <span class="text-gray-500 text-sm">14 AUG 2021</span>
-            <a href="#" class="text-teal-500 font-semibold border-b-2 border-teal-500 hover:border-teal-600">Read More</a>
-          </div>
+<button class="px-6 py-2 border-2 border-teal-500 text-teal-500 font-semibold rounded-md hover:bg-teal-50 focus:outline-none">
+  Read More
+</button>          </div>
         </div>
       </div>
 
@@ -606,7 +630,9 @@
           <h3 class="text-xl font-semibold text-gray-800">Ambulance Cover Of Fire On Insurance Serving</h3>
           <div class="mt-4 flex items-center justify-between">
             <span class="text-gray-500 text-sm">14 AUG 2021</span>
-            <a href="#" class="text-teal-500 font-semibold border-b-2 border-teal-500 hover:border-teal-600">Read More</a>
+<button class="px-6 py-2 border-2 border-teal-500 text-teal-500 font-semibold rounded-md hover:bg-teal-50 focus:outline-none">
+  Read More
+</button>
           </div>
         </div>
       </div>

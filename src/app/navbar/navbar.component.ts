@@ -1,12 +1,20 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common'; // Import CommonModule
+
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  styleUrls: ['./navbar.component.css'],
+  imports:[CommonModule]
 })
 export class NavbarComponent {
+  isMobileMenuOpen: boolean = false;
 
+  toggleMobileMenu(): void {
+    console.log("hamburger button clicked");
+    this.isMobileMenuOpen = !this.isMobileMenuOpen;
+    console.log(this.isMobileMenuOpen);
+  }
 }

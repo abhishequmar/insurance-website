@@ -11,59 +11,7 @@
 
 /* landing-page.component.css */
 
-.feature-section {
-  text-align: center;
-  padding: 2rem;
-}
 
-.feature-title {
-  color: #009688; /* Change as needed */
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-}
-
-.feature-subtitle {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 2rem;
-}
-
-.feature-cards {
-  
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-
-.feature-card {
-
-  background-color: #ffffff;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 20%;
-  
-  text-align:left;
-}
-
-.feature-card .icon {
-  height: 20%;
-  width: auto;
-  margin-bottom: 1rem;
-}
-
-.feature-card h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.feature-card p {
-  font-size: 0.9rem;
-  color: #666;
-}
 
 
 /* landing-page.component.css */
@@ -144,83 +92,6 @@
 }
 
 
-/* /////////////////////////////////// */
-.insuranceservices-section {
-  text-align: center;
-  padding: 2rem;
-}
-
-.insuranceservices-heading {
-  font-size: 1rem;
-  color: #21a098;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.insuranceservices-title {
-  font-size: 2rem;
-  color: #333;
-  margin: 1rem 0 2rem;
-}
-
-.insuranceservices-cards-container {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.insuranceservices-card {
-  position: relative;
-  width: 30%;
-  height: 100%;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.insuranceservices-card-image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.insuranceservices-card-overlay {
-  position: absolute;
-  bottom: 10%;
-  left: 10%;
-  width: 80%;
-  background-color:  rgb(33, 160, 152, 0.8);
-  border-radius: 5%;
-  padding: 1rem;
-  color: #fff;
-  text-align: center;
-}
-
-.insuranceservices-card-category {
-  font-size: 0.8rem;
-  font-weight: 500;
-  color: white;
-}
-
-.insuranceservices-card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-top: 0.5rem;
-}
-
-.insuranceservices-footer {
-  padding-left: 20%;
-  width: 75%;
-  align-self: center;
-  margin-top: 2rem;
-  font-size: 1rem;
-  color: #666;
-}
-
-.insuranceservices-link {
-  color: #21a098;
-  text-decoration: none;
-  font-weight: bold;
-}
 
 
 

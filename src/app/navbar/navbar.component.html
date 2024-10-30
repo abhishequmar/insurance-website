@@ -1,37 +1,143 @@
-<nav class="navbar">
-  <div class="navbar-container">
+<nav class="navbar bg-white shadow-md px-4 py-2">
+  <div class="flex justify-between items-center max-w-7xl mx-auto w-full">
     <!-- Logo -->
-    <a href="#" class="navbar-logo">
+    <a href="#" class="text-2xl font-bold text-teal-600">
       Logo
     </a>
 
-    <!-- Search bar -->
-    <div class="navbar-search">
-      <input type="text" placeholder="Search here..." class="search-input">
+    <!-- Search bar (hidden on mobile) -->
+    <div class="hidden lg:flex items-center w-full max-w-xs">
+      <input type="text" placeholder="Search here..." class="search-input w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500" />
     </div>
 
     <!-- Navbar Links -->
-    <div class="navbar-links">
-      <a href="#" class="navbar-link">Home</a>
-      <a href="#" class="navbar-link">Pages</a>
-      <a href="#" class="navbar-link">Insurances</a>
-      <a href="#" class="navbar-link">Blog</a>
-      <a href="#" class="navbar-link">Contact Us</a>
+    <div class="hidden lg:flex space-x-4 items-center">
+      <!-- Dropdown for "Pages" -->
+      <div class="relative group">
+        <a href="#" class="navbar-link text-gray-600 hover:text-teal-600 flex items-center">
+          Pages
+          <svg class="ml-1 w-4 h-4 text-gray-600 group-hover:text-teal-600" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M5.23 7.21a.75.75 0 011.06 0L10 10.91l3.71-3.7a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.23 8.27a.75.75 0 010-1.06z"/>
+          </svg>
+        </a>
+        <div class="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-lg hidden group-hover:block z-20">
+          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-teal-100">About Us</a>
+          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-teal-100">Our Services</a>
+          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-teal-100">Team</a>
+        </div>
+      </div>
+
+      <!-- Dropdown for "Insurances" -->
+      <div class="relative group">
+        <a href="#" class="navbar-link text-gray-600 hover:text-teal-600 flex items-center">
+          Insurances
+          <svg class="ml-1 w-4 h-4 text-gray-600 group-hover:text-teal-600" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M5.23 7.21a.75.75 0 011.06 0L10 10.91l3.71-3.7a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.23 8.27a.75.75 0 010-1.06z"/>
+          </svg>
+        </a>
+        <div class="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-lg hidden group-hover:block z-20">
+          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-teal-100">Health Insurance</a>
+          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-teal-100">Life Insurance</a>
+          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-teal-100">Car Insurance</a>
+        </div>
+      </div>
+
+      <!-- Dropdown for "Blogs" -->
+      <div class="relative group">
+        <a href="#" class="navbar-link text-gray-600 hover:text-teal-600 flex items-center">
+          Blogs
+          <svg class="ml-1 w-4 h-4 text-gray-600 group-hover:text-teal-600" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+            <path d="M5.23 7.21a.75.75 0 011.06 0L10 10.91l3.71-3.7a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.23 8.27a.75.75 0 010-1.06z"/>
+          </svg>
+        </a>
+        <div class="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-lg hidden group-hover:block z-20">
+          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-teal-100">Healthcare</a>
+          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-teal-100">Research</a>
+          <a href="#" class="block px-4 py-2 text-gray-600 hover:bg-teal-100">Latest</a>
+        </div>
+      </div>
+
+      
+
+      <!-- Other Links -->
+      <a href="#" class="navbar-link text-gray-600 hover:text-teal-600">Contact Us</a>
     </div>
 
     <!-- Contact and Get A Quote Button -->
-    <div class="navbar-contact">
-      <span class="phone-info">
-        <i class="fas fa-phone phone-icon"></i> +(111) 65 458 856
-      </span>
-      <button class="quote-button">Get A Quote</button>
-    </div>
+<div class="hidden lg:flex items-center space-x-4">
+  <div class="flex items-center text-gray-600">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-teal-500 mr-2" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M22 16.92v3.36a2.77 2.77 0 0 1-2.75 2.75A19.47 19.47 0 0 1 2 5.75 2.77 2.77 0 0 1 4.75 3h3.36a2 2 0 0 1 2 1.72 12.14 12.14 0 0 0 .65 2.57 2 2 0 0 1-.45 2.11L8.46 11.21a15.06 15.06 0 0 0 6.29 6.29l1.81-1.81a2 2 0 0 1 2.11-.45 12.14 12.14 0 0 0 2.57.65A2 2 0 0 1 22 16.92z"/>
+  </svg>
+  +(111) 65 458 856
+</div>
+  <button class="bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600 focus:outline-none">Get A Quote</button>
+</div>
+
 
     <!-- Hamburger Menu for Mobile -->
-    <button class="hamburger-menu">
-      <svg xmlns="http://www.w3.org/2000/svg" class="hamburger-icon" fill="none" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
-    </button>
+<button id="hamburger-menu" (click)="toggleMobileMenu()" class="lg:hidden flex items-center text-gray-600 focus:outline-none">
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+  </svg>
+</button>
+
+
+  <!-- Mobile Menu -->
+<div id="mobile-menu" *ngIf="isMobileMenuOpen" class="lg:hidden absolute right-0 top-10 flex-col space-y-4 px-4 py-6 bg-white shadow-lg">
+    <input type="text" placeholder="Search here..." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500" />
+    <a href="#" class="block text-gray-600 hover:text-teal-600">Home</a>
+
+    <!-- Mobile Dropdown for Pages -->
+    <div class="mobile-dropdown">
+      <button class="flex justify-between w-full text-left text-gray-600 hover:text-teal-600">
+        Pages
+        <svg class="w-4 h-4 ml-1 transform transition-transform" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+          <path d="M5.23 7.21a.75.75 0 011.06 0L10 10.91l3.71-3.7a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.23 8.27a.75.75 0 010-1.06z"/>
+        </svg>
+      </button>
+      <div class="hidden flex-col pl-4 space-y-2">
+        <a href="#" class="block text-gray-600 hover:text-teal-600">About Us</a>
+        <a href="#" class="block text-gray-600 hover:text-teal-600">Our Services</a>
+        <a href="#" class="block text-gray-600 hover:text-teal-600">Team</a>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown for Insurances -->
+    <div class="mobile-dropdown">
+      <button class="flex justify-between w-full text-left text-gray-600 hover:text-teal-600">
+        Insurances
+        <svg class="w-4 h-4 ml-1 transform transition-transform" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+          <path d="M5.23 7.21a.75.75 0 011.06 0L10 10.91l3.71-3.7a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.23 8.27a.75.75 0 010-1.06z"/>
+        </svg>
+      </button>
+      <div class="hidden flex-col pl-4 space-y-2">
+        <a href="#" class="block text-gray-600 hover:text-teal-600">Health Insurance</a>
+        <a href="#" class="block text-gray-600 hover:text-teal-600">Life Insurance</a>
+        <a href="#" class="block text-gray-600 hover:text-teal-600">Car Insurance</a>
+      </div>
+    </div>
+
+    <!-- Blogs  -->
+    <div class="mobile-dropdown">
+      <button class="flex justify-between w-full text-left text-gray-600 hover:text-teal-600">
+        Blogs
+        <svg class="w-4 h-4 ml-1 transform transition-transform" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+          <path d="M5.23 7.21a.75.75 0 011.06 0L10 10.91l3.71-3.7a.75.75 0 111.06 1.06l-4.24 4.24a.75.75 0 01-1.06 0L5.23 8.27a.75.75 0 010-1.06z"/>
+        </svg>
+      </button>
+      <div class="hidden flex-col pl-4 space-y-2">
+        <a href="#" class="block text-gray-600 hover:text-teal-600">Healthcare</a>
+        <a href="#" class="block text-gray-600 hover:text-teal-600">Research</a>
+        <a href="#" class="block text-gray-600 hover:text-teal-600">Latest</a>
+      </div>
+    </div>
+
+    
+
+    <a href="#" class="block text-gray-600 hover:text-teal-600">Blog</a>
+    <a href="#" class="block text-gray-600 hover:text-teal-600">Contact Us</a>
+<!-- Telephone Icon with Teal Color -->
+
+    <button class="bg-teal-500 text-white w-full py-2 rounded-lg hover:bg-teal-600 focus:outline-none">Get A Quote</button>
   </div>
-</nav>
